@@ -9,7 +9,9 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "git-commit-msg-linter": "^5.0.8"
+    "git-commit-msg-linter": "^5.0.8",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7"
   },
   "dependencies": {
     "@types/node": "^20.14.9",
