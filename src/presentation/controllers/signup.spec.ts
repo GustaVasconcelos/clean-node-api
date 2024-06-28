@@ -1,8 +1,8 @@
-import { SingUpController } from './signup'
+import { SignUpController } from './signup'
 
 describe('SignUp Controller', () => {
   test('Should return 400 if no name is provided', () => {
-    const sut = new SingUpController()
+    const sut = new SignUpController()
 
     const httpRequest = {
       body: {
@@ -19,7 +19,7 @@ describe('SignUp Controller', () => {
   })
 
   test('Should return 400 if no email is provided', () => {
-    const sut = new SingUpController()
+    const sut = new SignUpController()
 
     const httpRequest = {
       body: {
