@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
 import { InvalidParamError, MissingParamError } from '../../errors'
 import { badRequest, ok, serverError } from '../../helpers/http-helper'
 import { type Controller, type EmailValidator, type HttpResponse, type HttpRequest, type AddAccount } from './signup-protocols'
@@ -41,6 +42,7 @@ export class SignUpController implements Controller {
 
       return ok(account)
     } catch (error) {
+      console.error(error)
       return serverError()
     }
   }
